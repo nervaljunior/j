@@ -1,3 +1,4 @@
+package Crud;
 
 public interface Cadastro {
     void cadastrar(Funcionario funcionario);

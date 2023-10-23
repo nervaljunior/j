@@ -27,9 +27,8 @@ public class Disciplina {
         
     }
 
+    
 
-    ArrayList<Professor>professores;
-    ArrayList<Turma>turmas;
 
     public Disciplina(String nome_disciplina, int cargahoraria, int codigo, String descricao, int cargaHoraria2,
             String ementa, ArrayList<Professor> professores, ArrayList<Turma> turmas) {
@@ -42,6 +41,12 @@ public class Disciplina {
         this.professores = professores;
         this.turmas = turmas;
     }
+
+
+    ArrayList<Professor>professores;
+    ArrayList<Turma>turmas;
+
+
 
     public String getNome_disciplina() {
         return nome_disciplina;

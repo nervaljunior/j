@@ -1,4 +1,6 @@
 import escola.Disciplina;
+import escola.Turma;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -69,6 +71,22 @@ public class App {
 
         System.out.println(disciplina1.getCargahoraria());
         System.out.println(disciplina1.getNome_disciplina());
+
+        Turma turma1= new Turma();
+
+        turma1.setAno(null);        
+        turma1.setSigla("ma");    
+/*         
+        Aluno aluno1= new Aluno();
+
+        aluno1.setData_nascimento(null);
+        aluno1.setNome("nerval");
+        aluno1.setMatricula(null);
+        
+        System.out.println(aluno1.getNome());
+        
+        */
+
 
         SwingUtilities.invokeLater(new Runnable() {
             @Override

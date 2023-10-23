@@ -1,3 +1,4 @@
+package Crud;
 
 public class Funcionario {
     private int id;
