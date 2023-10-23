@@ -8,6 +8,22 @@ public class Professor extends Pessoa{
     private double salario;
 
 
+
+    public Professor(String nome, String matricula, String endereco, String telefone, String formacao_academica,
+            double salario, ArrayList<Disciplina> disciplinas, ArrayList<Turma> turmas) {
+        super(nome, matricula, endereco, telefone);
+        this.formacao_academica = formacao_academica;
+        this.salario = salario;
+        this.disciplinas = disciplinas;
+        this.turmas = turmas;
+    }
+
+
+    public void cadastrar() {
+        
+    }
+
+
     ArrayList<Disciplina>disciplinas;
     ArrayList<Turma>turmas;
 
@@ -19,7 +35,6 @@ public class Professor extends Pessoa{
     }
 
 
-    
 
     /**
      * @return String return the formacao_academica
@@ -48,5 +63,34 @@ public class Professor extends Pessoa{
     public void setSalario(double salario) {
         this.salario = salario;
     }
+
+
+    public ArrayList<Disciplina> getDisciplinas() {
+        return disciplinas;
+    }
+
+
+    public void setDisciplinas(ArrayList<Disciplina> disciplinas) {
+        this.disciplinas = disciplinas;
+    }
+
+
+    public ArrayList<Turma> getTurmas() {
+        return turmas;
+    }
+
+
+    public void setTurmas(ArrayList<Turma> turmas) {
+        this.turmas = turmas;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Professor [formacao_academica=" + formacao_academica + ", salario=" + salario + ", disciplinas="
+                + disciplinas + ", turmas=" + turmas + "]";
+    }
+
+    
 
 }
